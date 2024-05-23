@@ -58,7 +58,7 @@ const HomeScreen: FC<any> = (): JSX.Element => {
           )}
         />
 
-        <GraphCard title="Some Title" icon={IC_INFO} />
+        <GraphCard />
 
         <FeaturesList />
       </ScrollView>
