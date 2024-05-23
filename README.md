@@ -1,8 +1,6 @@
 # Libs Used
 
 - TypeScript
-- Jest
-- React Native Testing Library
 - React Navigation
 - React Native Paper
 - React Native Chart Kit
