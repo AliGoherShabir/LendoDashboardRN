@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {widthPercentageToDP as wp} from '../../utils/responsiveScreens';
 
 export default StyleSheet.create({
   shadowStyle: {
@@ -15,7 +16,7 @@ export default StyleSheet.create({
   },
   container: {
     alignItems: 'center',
-    // marginTop: 24,
+    marginTop: -wp('7%'),
   },
   chart: {
     // marginVertical: 8,

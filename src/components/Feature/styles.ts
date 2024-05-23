@@ -1,11 +1,14 @@
-import { StyleSheet } from "react-native";
-import { widthPercentageToDP as wp, heightPercentageToDP as hp } from '../../utils/responsiveScreens';
+import {StyleSheet} from 'react-native';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from '../../utils/responsiveScreens';
 
 export default StyleSheet.create({
   featureContainer: {
     alignItems: 'center',
     padding: wp('4%'),
-    margin: wp('2%'),
+    marginHorizontal: wp('2%'),
     height: wp('26%'),
     width: wp('29%'),
     borderRadius: 12,
@@ -28,6 +31,6 @@ export default StyleSheet.create({
   title: {
     fontSize: wp('3.2%'),
     fontWeight: '600',
-    color: '#190044'
-  }
+    color: '#190044',
+  },
 });

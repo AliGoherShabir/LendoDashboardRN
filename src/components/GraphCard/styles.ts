@@ -6,10 +6,9 @@ import {
 
 export default StyleSheet.create({
   container: {
-    // height: wp('26%'),
     width: wp('88%'),
     alignSelf: 'center',
-    marginTop: -wp('8%'),
+    marginTop: -wp('10%'),
     borderRadius: 12,
     backgroundColor: '#ffffff',
   },
@@ -28,7 +27,8 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   mainWalletLabelContainer: {
-    padding: wp('4%'),
+    paddingHorizontal: wp('4%'),
+    paddingVertical: wp('2%'),
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -36,7 +36,8 @@ export default StyleSheet.create({
     borderTopColor: '#EDECEE',
   },
   largeTextContainer: {
-    padding: wp('4%'),
+    paddingTop: wp('3%'),
+    paddingHorizontal: wp('4%'),
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -75,17 +76,16 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     marginHorizontal: wp('3%'),
-    paddingVertical: wp('5%'),
+    paddingVertical: wp('3%'),
   },
   generalDetailsStyle: {
     // alignItems: 'flex-end',
-    // backgroundColor: 'red',
   },
   graphPointDetails: {
-    // alignItems: 'flex-end',
     backgroundColor: '#F5F9FC',
     alignSelf: 'center',
     padding: wp('4%'),
+    zIndex: 99,
   },
   loansText: {
     backgroundColor: '#EDECEE',

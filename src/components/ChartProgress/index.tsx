@@ -52,7 +52,7 @@ const ChartProgress: FC<ItemProps> = (): JSX.Element => {
         data={data}
         width={wp('86%')}
         onDataPointClick={data => console.log('data ===> ', data)}
-        height={220}
+        height={wp('48%')}
         yAxisLabel=""
         yAxisSuffix=""
         withHorizontalLabels={false}

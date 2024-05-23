@@ -108,7 +108,6 @@ export const MainTabNavigator = () => (
               color: labelColor,
               fontWeight: '500',
               fontSize: wp('3%'),
-              // paddingVertical: 4,
               marginTop: -wp('2%'),
               marginBottom: wp('6%'),
             }}>

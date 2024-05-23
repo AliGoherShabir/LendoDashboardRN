@@ -21,7 +21,22 @@ const HomeScreen: FC<any> = (): JSX.Element => {
           subtitleStyle={styles.subtitleText}
           style={styles.headerContainerStyle}
           subtitle="Mary Doe"
-          left={props => <Avatar.Icon {...props} icon={IC_INFO} />}
+          left={props => (
+            <View>
+              <Avatar.Icon {...props} icon={IC_INFO} />
+              <Badge
+                size={wp('3%')}
+                style={{
+                  backgroundColor: '#38D36C',
+                  borderWidth: 2,
+                  borderColor: 'white',
+                  position: 'absolute',
+                  bottom: 0, //wp('4%'),
+                  right: 0, //wp('4%'),
+                }}
+              />
+            </View>
+          )}
           right={props => (
             <View>
               <IconButton

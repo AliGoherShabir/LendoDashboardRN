@@ -1,6 +1,6 @@
 import React from 'react';
-import {View, Text, StyleSheet, FlatList} from 'react-native';
-import {mocData} from '../../store/utils';
+import {View, Text, FlatList} from 'react-native';
+import {mocData} from '../../utils/utils';
 import Feature from '../Feature';
 import styles from './styles';
 

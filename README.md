@@ -3,10 +3,9 @@
 - TypeScript
 - Jest
 - React Native Testing Library
-- Redux Toolkit
-- Redux Persist
-- RTK Query
 - React Navigation
+- React Native Paper
+- React Native Chart Kit
 
 # Project Structure
 
@@ -15,24 +14,14 @@
 └── index.js
 └── 📁src
     └── App.tsx
+    └── 📁assets
     └── 📁components
         └── index.ts
     └── 📁navigators
         └── index.ts
     └── 📁screens
         └── index.ts
-    └── 📁store
-        └── hooks.ts
-        └── index.ts
-        └── 📁services
-            └── index.ts
-            └── productsApi.ts
-        └── 📁slices
-            └── cartSlice.ts
-            └── index.ts
-            └── productSlice.ts
-        └── types.ts
-        └── utils.ts
+    └── utils
 ```
 
 # Getting Started

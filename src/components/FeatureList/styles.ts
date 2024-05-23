@@ -8,7 +8,7 @@ export default StyleSheet.create({
   header: {
     fontSize: wp('4.8%'),
     fontWeight: '600',
-    marginTop: wp('5%'),
+    marginTop: wp('4%'),
     marginHorizontal: wp('6%'),
     marginBottom: wp('4.8%'),
     color: '#4b4b4b',
