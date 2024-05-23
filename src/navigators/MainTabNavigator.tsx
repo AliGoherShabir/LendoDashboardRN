@@ -2,9 +2,19 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import DummyScreen from '../screens/DummyScreen';
 import HomeScreen from '../screens/HomeScreen';
-import { Icon, Text } from 'react-native-paper';
-import { IC_DOWNLOADING, IC_HOME, IC_MORE, IC_PIE_GRAPH, IC_WALLET } from '../assets';
-import { widthPercentageToDP as wp, heightPercentageToDP as hp } from '../utils/responsiveScreens';
+import {Badge, Icon} from 'react-native-paper';
+import {
+  IC_DOWNLOADING,
+  IC_HOME,
+  IC_MORE,
+  IC_PIE_GRAPH,
+  IC_WALLET,
+} from '../assets';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from '../utils/responsiveScreens';
+import {View, Text} from 'react-native';
 
 type MainTabParamList = {
   Home: undefined;
@@ -17,10 +27,10 @@ type MainTabParamList = {
 const Tab = createBottomTabNavigator<MainTabParamList>();
 
 export const MainTabNavigator = () => (
-  <Tab.Navigator 
-    screenOptions={({ route }) => ({
+  <Tab.Navigator
+    screenOptions={({route}) => ({
       headerShown: false,
-      tabBarIcon: ({ focused, color, size }) => {
+      tabBarIcon: ({focused, color, size}) => {
         let menuIcon;
 
         switch (route.name) {
@@ -38,22 +48,37 @@ export const MainTabNavigator = () => (
             break;
           case 'More':
             menuIcon = IC_MORE;
-            
+            break;
           default:
             menuIcon = IC_HOME;
         }
 
         return (
-          <Icon
-            source={menuIcon}
-            color={focused ? '#2C8BFD' : '#787381'}
-            size={wp('5%')}
-          />
+          <View>
+            <Icon
+              source={menuIcon}
+              color={focused ? '#2C8BFD' : '#787381'}
+              size={wp('5%')}
+            />
+            {route.name === 'More' && (
+              <Badge
+                size={wp('5%')}
+                style={{
+                  backgroundColor: '#F56565',
+                  position: 'absolute',
+                  top: -10,
+                  right: -10,
+                }}>
+                1
+              </Badge>
+            )}
+          </View>
         );
       },
       tabBarActiveTintColor: '#2C8BFD',
       tabBarInactiveTintColor: '#787381',
-      tabBarLabel: ({ focused }) => {
+      tabBarStyle: {height: wp('21%')},
+      tabBarLabel: ({focused}) => {
         let labelColor = focused ? '#2C8BFD' : '#787381';
         let label;
         switch (route.name) {
@@ -78,7 +103,15 @@ export const MainTabNavigator = () => (
         }
 
         return (
-          <Text style={{ color: labelColor, fontWeight: '500', fontSize: wp('3%'), paddingVertical: 4 }}>
+          <Text
+            style={{
+              color: labelColor,
+              fontWeight: '500',
+              fontSize: wp('3%'),
+              // paddingVertical: 4,
+              marginTop: -wp('2%'),
+              marginBottom: wp('6%'),
+            }}>
             {label}
           </Text>
         );

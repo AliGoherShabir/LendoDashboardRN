@@ -5,6 +5,7 @@ import styles from './styles';
 import {Divider, Icon} from 'react-native-paper';
 import {IC_ADD, IC_EYE, IC_INFO, IC_WALLET} from '../../assets';
 import {widthPercentageToDP as wp} from '../../utils/responsiveScreens';
+import ChartProgress from '../ChartProgress';
 
 type GraphCardProps = PropsWithChildren<{
   title: string;
@@ -39,6 +40,8 @@ const GraphCard: FC<GraphCardProps> = ({title, icon}): JSX.Element => {
           </View>
         </View>
       </View>
+
+      <ChartProgress />
 
       {/* O/S Details */}
       <View style={styles.generalLabelContainer}>

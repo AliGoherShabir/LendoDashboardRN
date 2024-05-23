@@ -1,8 +1,8 @@
-import { StyleSheet } from "react-native";
+import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
   shadowStyle: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 1,
@@ -12,5 +12,13 @@ export default StyleSheet.create({
 
     elevation: 3,
     backgroundColor: '#ffffff',
-  }
+  },
+  container: {
+    alignItems: 'center',
+    // marginTop: 24,
+  },
+  chart: {
+    // marginVertical: 8,
+    borderRadius: 16,
+  },
 });

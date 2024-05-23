@@ -1,5 +1,8 @@
-import { StyleSheet } from "react-native";
-import { widthPercentageToDP as wp, heightPercentageToDP as hp } from '../../utils/responsiveScreens';
+import {StyleSheet} from 'react-native';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from '../../utils/responsiveScreens';
 
 export default StyleSheet.create({
   header: {
@@ -8,6 +11,9 @@ export default StyleSheet.create({
     marginTop: wp('5%'),
     marginHorizontal: wp('6%'),
     marginBottom: wp('4.8%'),
-    color: '#4b4b4b'
-  }
+    color: '#4b4b4b',
+  },
+  container: {
+    marginBottom: wp('8%'),
+  },
 });
